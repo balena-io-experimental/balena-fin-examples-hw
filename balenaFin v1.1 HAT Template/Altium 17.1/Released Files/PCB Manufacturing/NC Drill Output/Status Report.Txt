@@ -1,0 +1,16 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 7:18:29 PM On 6/5/2019
+
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [balenaFin HAT Template PCB.PcbDoc]
+   Generated File[balenaFin HAT Template PCB.TXT]
+   Generated File[balenaFin HAT Template PCB.LDP]
+   Generated File[balenaFin HAT Template PCB.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 7:18:29 PM On 6/5/2019
