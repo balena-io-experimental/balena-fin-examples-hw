@@ -1,0 +1,307 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "balenaFin RaspberryPi Hat"
+Date ""
+Rev "0.0.1"
+Comp "balena LTD"
+Comment1 "Mahmoud Tolba"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5F07D099
+P 3450 5300
+F 0 "#PWR0101" H 3450 5050 50  0001 C CNN
+F 1 "GND" H 3455 5127 50  0000 C CNN
+F 2 "" H 3450 5300 50  0001 C CNN
+F 3 "" H 3450 5300 50  0001 C CNN
+	1    3450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5100 3150 5200
+Wire Wire Line
+	3150 5200 3250 5200
+Wire Wire Line
+	3850 5200 3850 5100
+Wire Wire Line
+	3450 5100 3450 5200
+Connection ~ 3450 5200
+Wire Wire Line
+	3450 5200 3550 5200
+Wire Wire Line
+	3450 5300 3450 5200
+Wire Wire Line
+	3350 5100 3350 5200
+Connection ~ 3350 5200
+Wire Wire Line
+	3350 5200 3450 5200
+Wire Wire Line
+	3250 5100 3250 5200
+Connection ~ 3250 5200
+Wire Wire Line
+	3250 5200 3350 5200
+Wire Wire Line
+	3550 5100 3550 5200
+Connection ~ 3550 5200
+Wire Wire Line
+	3550 5200 3650 5200
+Wire Wire Line
+	3650 5100 3650 5200
+Connection ~ 3650 5200
+Wire Wire Line
+	3650 5200 3750 5200
+Wire Wire Line
+	3750 5100 3750 5200
+Connection ~ 3750 5200
+Wire Wire Line
+	3750 5200 3850 5200
+Wire Wire Line
+	3350 2500 3350 2200
+Wire Wire Line
+	3350 2200 3450 2200
+Wire Wire Line
+	3450 2200 3450 2500
+Wire Wire Line
+	3650 2500 3650 2200
+Wire Wire Line
+	3650 2200 3750 2200
+Wire Wire Line
+	3750 2200 3750 2500
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5F07F1C6
+P 3750 2000
+F 0 "#PWR0102" H 3750 1850 50  0001 C CNN
+F 1 "+3.3V" H 3765 2173 50  0000 C CNN
+F 2 "" H 3750 2000 50  0001 C CNN
+F 3 "" H 3750 2000 50  0001 C CNN
+	1    3750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5F07F8B1
+P 3350 2000
+F 0 "#PWR0103" H 3350 1850 50  0001 C CNN
+F 1 "+5V" H 3365 2173 50  0000 C CNN
+F 2 "" H 3350 2000 50  0001 C CNN
+F 3 "" H 3350 2000 50  0001 C CNN
+	1    3350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2000 3350 2200
+Connection ~ 3350 2200
+Wire Wire Line
+	3750 2000 3750 2200
+Connection ~ 3750 2200
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 5F0810CB
+P 10100 2300
+F 0 "J4" H 10128 2276 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 10128 2185 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10100 2300 50  0001 C CNN
+F 3 "~" H 10100 2300 50  0001 C CNN
+	1    10100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x09_Top_Bottom J3
+U 1 1 5F082D48
+P 10000 4450
+F 0 "J3" H 10050 5067 50  0000 C CNN
+F 1 "Conn_02x09_Top_Bottom" H 10050 4976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 10000 4450 50  0001 C CNN
+F 3 "~" H 10000 4450 50  0001 C CNN
+	1    10000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J2
+U 1 1 5F084777
+P 8100 2250
+F 0 "J2" H 8150 2467 50  0000 C CNN
+F 1 "Conn_02x02_Top_Bottom" H 8150 2376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 8100 2250 50  0001 C CNN
+F 3 "~" H 8100 2250 50  0001 C CNN
+	1    8100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F085248
+P 9550 1300
+F 0 "H2" H 9650 1349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9650 1258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9550 1300 50  0001 C CNN
+F 3 "~" H 9550 1300 50  0001 C CNN
+	1    9550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F08638C
+P 8400 1300
+F 0 "H1" H 8500 1349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8500 1258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 8400 1300 50  0001 C CNN
+F 3 "~" H 8400 1300 50  0001 C CNN
+	1    8400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5F07B77A
+P 3550 3800
+F 0 "J1" H 2550 5200 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2850 5100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3550 3800 50  0001 C CNN
+	1    3550 3800
+	1    0    0    -1  
+$EndComp
+Text Notes 9700 5050 0    50   ~ 0
+Co-Processor HAT
+Text Notes 7900 2550 0    50   ~ 0
+POE Header
+Text Notes 9800 2750 0    50   ~ 0
+USB Header
+Text Notes 4000 5100 0    50   ~ 0
+Raspberry Pi CM3 HAT Socket
+NoConn ~ 4350 2900
+NoConn ~ 4350 3000
+NoConn ~ 4350 3200
+NoConn ~ 4350 3300
+NoConn ~ 4350 3500
+NoConn ~ 4350 3600
+NoConn ~ 4350 3700
+NoConn ~ 4350 3900
+NoConn ~ 4350 4000
+NoConn ~ 4350 4100
+NoConn ~ 4350 4200
+NoConn ~ 4350 4300
+NoConn ~ 4350 4500
+NoConn ~ 4350 4600
+NoConn ~ 2750 2900
+NoConn ~ 2750 3000
+NoConn ~ 2750 3200
+NoConn ~ 2750 3300
+NoConn ~ 2750 3400
+NoConn ~ 2750 3600
+NoConn ~ 2750 3700
+NoConn ~ 2750 3800
+NoConn ~ 2750 4000
+NoConn ~ 2750 4100
+NoConn ~ 2750 4200
+NoConn ~ 2750 4300
+NoConn ~ 2750 4400
+NoConn ~ 2750 4500
+NoConn ~ 7900 2250
+NoConn ~ 7900 2350
+NoConn ~ 8400 2250
+NoConn ~ 8400 2350
+NoConn ~ 8400 1400
+NoConn ~ 9550 1400
+NoConn ~ 9900 2200
+NoConn ~ 9900 2300
+NoConn ~ 9900 2400
+NoConn ~ 9900 2500
+NoConn ~ 9800 4050
+NoConn ~ 10300 4050
+NoConn ~ 10300 4150
+NoConn ~ 9800 4150
+NoConn ~ 9800 4250
+NoConn ~ 9800 4350
+NoConn ~ 9800 4450
+NoConn ~ 9800 4550
+NoConn ~ 9800 4650
+NoConn ~ 9800 4750
+NoConn ~ 9800 4850
+NoConn ~ 10300 4850
+NoConn ~ 10300 4750
+NoConn ~ 10300 4650
+NoConn ~ 10300 4550
+NoConn ~ 10300 4450
+NoConn ~ 10300 4350
+NoConn ~ 10300 4250
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F0A5218
+P 5600 1100
+F 0 "#FLG0101" H 5600 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 1273 50  0000 C CNN
+F 2 "" H 5600 1100 50  0001 C CNN
+F 3 "~" H 5600 1100 50  0001 C CNN
+	1    5600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F0A5889
+P 6150 1100
+F 0 "#FLG0102" H 6150 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 1273 50  0000 C CNN
+F 2 "" H 6150 1100 50  0001 C CNN
+F 3 "~" H 6150 1100 50  0001 C CNN
+	1    6150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5F0A5D68
+P 5600 1300
+F 0 "#PWR0104" H 5600 1150 50  0001 C CNN
+F 1 "+3.3V" H 5615 1473 50  0000 C CNN
+F 2 "" H 5600 1300 50  0001 C CNN
+F 3 "" H 5600 1300 50  0001 C CNN
+	1    5600 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F0A64A2
+P 6150 1300
+F 0 "#PWR0105" H 6150 1150 50  0001 C CNN
+F 1 "+5V" H 6165 1473 50  0000 C CNN
+F 2 "" H 6150 1300 50  0001 C CNN
+F 3 "" H 6150 1300 50  0001 C CNN
+	1    6150 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F0A7111
+P 6700 1100
+F 0 "#FLG0103" H 6700 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 6700 1273 50  0000 C CNN
+F 2 "" H 6700 1100 50  0001 C CNN
+F 3 "~" H 6700 1100 50  0001 C CNN
+	1    6700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F0A74E3
+P 6700 1300
+F 0 "#PWR0106" H 6700 1050 50  0001 C CNN
+F 1 "GND" H 6705 1127 50  0000 C CNN
+F 2 "" H 6700 1300 50  0001 C CNN
+F 3 "" H 6700 1300 50  0001 C CNN
+	1    6700 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1300 5600 1100
+Wire Wire Line
+	6150 1300 6150 1100
+Wire Wire Line
+	6700 1300 6700 1100
+$EndSCHEMATC
