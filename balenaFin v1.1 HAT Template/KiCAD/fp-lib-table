@@ -1,2 +1,3 @@
 (fp_lib_table
+  (lib (name "FIN HAT Template")(type KiCad)(uri "${KIPRJMOD}/Lib/FIN HAT Template.pretty")(options "")(descr ""))
 )

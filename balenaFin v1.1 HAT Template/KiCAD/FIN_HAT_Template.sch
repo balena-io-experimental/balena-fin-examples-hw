@@ -130,7 +130,7 @@ U 1 1 5F07B77A
 P 3550 3800
 F 0 "J1" H 2550 5200 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 2850 5100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
+F 2 "FIN HAT Template:PinHeader_2x20_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3550 3800 50  0001 C CNN
 	1    3550 3800
 	1    0    0    -1  
@@ -273,7 +273,7 @@ U 1 1 5F1CE898
 P 9700 4050
 F 0 "J3" H 10050 4275 50  0000 C CNN
 F 1 "Co-Processor_Header" H 10050 4184 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 9700 3650 50  0001 C CNN
+F 2 "FIN HAT Template:PinHeader_2x09_P2.54mm_Vertical" H 9700 3650 50  0001 C CNN
 F 3 "~" H 9700 3650 50  0001 C CNN
 	1    9700 4050
 	1    0    0    -1  
@@ -300,7 +300,7 @@ U 1 1 5F1D361B
 P 7900 2300
 F 0 "J2" H 8150 2525 50  0000 C CNN
 F 1 "POE_Header" H 8150 2434 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7900 2300 50  0001 C CNN
+F 2 "FIN HAT Template:PinHeader_2x02_P2.54mm_Vertical" H 7900 2300 50  0001 C CNN
 F 3 "~" H 7900 2300 50  0001 C CNN
 	1    7900 2300
 	1    0    0    -1  
@@ -311,7 +311,7 @@ U 1 1 5F1D6217
 P 10100 2300
 F 0 "J4" H 10328 2301 50  0000 L CNN
 F 1 "USB_Header" H 10328 2210 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10100 2300 50  0001 C CNN
+F 2 "FIN HAT Template:PinHeader_1x04_P2.54mm_Vertical" H 10100 2300 50  0001 C CNN
 F 3 "~" H 10100 2300 50  0001 C CNN
 	1    10100 2300
 	1    0    0    -1  
