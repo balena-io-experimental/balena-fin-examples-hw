@@ -3,4 +3,4 @@ A collection of sample hardware designs for the balenaFin. This collection will 
 
 Example | Description | Compatible with | EDA/CAD Platform 
 ------------ | ------------ | ------------ | ------------ 
-HAT Template | Template design to use as base for custom HATs for the balenaFin | v1.1 balenaFin | Altium/CircuitStudio
+HAT Template | Template design to use as base for custom HATs for the balenaFin | v1.1 balenaFin | Altium/CircuitStudio/KiCAD
