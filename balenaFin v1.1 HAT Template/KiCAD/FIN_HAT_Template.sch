@@ -124,23 +124,10 @@ F 3 "~" H 8400 1300 50  0001 C CNN
 	1    8400 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Raspberry_Pi_2_3 J1
-U 1 1 5F07B77A
-P 3550 3800
-F 0 "J1" H 2550 5200 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2850 5100 50  0000 C CNN
-F 2 "FIN HAT Template:PinHeader_2x20_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3550 3800 50  0001 C CNN
-	1    3550 3800
-	1    0    0    -1  
-$EndComp
 Text Notes 9700 5050 0    50   ~ 0
 Co-Processor HAT
 Text Notes 7900 2550 0    50   ~ 0
 POE Header
-Text Notes 10100 2700 0    50   ~ 0
-USB Header
 Text Notes 4000 5100 0    50   ~ 0
 Raspberry Pi CM3 HAT Socket
 NoConn ~ 4350 2900
@@ -267,17 +254,6 @@ Wire Wire Line
 	6150 1300 6150 1100
 Wire Wire Line
 	6700 1300 6700 1100
-$Comp
-L FIN_HAT_TEMPLATE:Co-Processor_Header J3
-U 1 1 5F1CE898
-P 9700 4050
-F 0 "J3" H 10050 4275 50  0000 C CNN
-F 1 "Co-Processor_Header" H 10050 4184 50  0000 C CNN
-F 2 "FIN HAT Template:PinHeader_2x09_P2.54mm_Vertical" H 9700 3650 50  0001 C CNN
-F 3 "~" H 9700 3650 50  0001 C CNN
-	1    9700 4050
-	1    0    0    -1  
-$EndComp
 NoConn ~ 10600 4050
 $Comp
 L power:GND #PWR07
@@ -294,28 +270,6 @@ Wire Wire Line
 	9400 5000 9400 4850
 Wire Wire Line
 	9400 4850 9500 4850
-$Comp
-L FIN_HAT_TEMPLATE:POE_Header J2
-U 1 1 5F1D361B
-P 7900 2300
-F 0 "J2" H 8150 2525 50  0000 C CNN
-F 1 "POE_Header" H 8150 2434 50  0000 C CNN
-F 2 "FIN HAT Template:PinHeader_2x02_P2.54mm_Vertical" H 7900 2300 50  0001 C CNN
-F 3 "~" H 7900 2300 50  0001 C CNN
-	1    7900 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L FIN_HAT_TEMPLATE:USB_Header J4
-U 1 1 5F1D6217
-P 10100 2300
-F 0 "J4" H 10328 2301 50  0000 L CNN
-F 1 "USB_Header" H 10328 2210 50  0000 L CNN
-F 2 "FIN HAT Template:PinHeader_1x04_P2.54mm_Vertical" H 10100 2300 50  0001 C CNN
-F 3 "~" H 10100 2300 50  0001 C CNN
-	1    10100 2300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5F1D6ACD
@@ -346,4 +300,48 @@ Wire Wire Line
 	9900 2500 9800 2500
 Wire Wire Line
 	9800 2500 9800 2600
+$Comp
+L FIN_HAT_TEMPLATE:Raspberry_Pi_2_3 J1
+U 1 1 5F15F5E4
+P 3550 3800
+F 0 "J1" H 2550 5200 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2850 5100 50  0000 C CNN
+F 2 "FIN HAT Template:PinSocket_2x20_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3550 3800 50  0001 C CNN
+	1    3550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L FIN_HAT_TEMPLATE:POE_Header J2
+U 1 1 5F162702
+P 7900 2300
+F 0 "J2" H 8150 2525 50  0000 C CNN
+F 1 "POE_Header" H 8150 2434 50  0000 C CNN
+F 2 "FIN HAT Template:PinSocket_2x02_P2.54mm_Vertical" H 7900 2300 50  0001 C CNN
+F 3 "~" H 7900 2300 50  0001 C CNN
+	1    7900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L FIN_HAT_TEMPLATE:Co-Processor_Header J3
+U 1 1 5F163428
+P 9700 4050
+F 0 "J3" H 10050 4275 50  0000 C CNN
+F 1 "Co-Processor_Header" H 10050 4184 50  0000 C CNN
+F 2 "FIN HAT Template:PinSocket_2x09_P2.54mm_Vertical" H 10050 4183 50  0001 C CNN
+F 3 "~" H 9700 3650 50  0001 C CNN
+	1    9700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L FIN_HAT_TEMPLATE:USB_Header J4
+U 1 1 5F165BD8
+P 10100 2300
+F 0 "J4" H 10328 2301 50  0000 L CNN
+F 1 "USB_Header" H 10328 2210 50  0000 L CNN
+F 2 "FIN HAT Template:PinSocket_1x04_P2.54mm_Vertical" H 10100 2300 50  0001 C CNN
+F 3 "~" H 10100 2300 50  0001 C CNN
+	1    10100 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
