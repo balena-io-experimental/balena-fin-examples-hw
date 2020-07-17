@@ -203,136 +203,6 @@ F 3 "~" H 10100 2300 50  0001 C CNN
 	1    10100 2300
 	1    0    0    -1  
 $EndComp
-Text Notes 4000 5100 0    50   ~ 0
-Raspberry Pi CM3 HAT Socket
-$Comp
-L power:+3.3V #PWR03
-U 1 1 5F07F1C6
-P 3750 2000
-F 0 "#PWR03" H 3750 1850 50  0001 C CNN
-F 1 "+3.3V" H 3765 2173 50  0000 C CNN
-F 2 "" H 3750 2000 50  0001 C CNN
-F 3 "" H 3750 2000 50  0001 C CNN
-	1    3750 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR01
-U 1 1 5F07F8B1
-P 3350 2000
-F 0 "#PWR01" H 3350 1850 50  0001 C CNN
-F 1 "+5V" H 3365 2173 50  0000 C CNN
-F 2 "" H 3350 2000 50  0001 C CNN
-F 3 "" H 3350 2000 50  0001 C CNN
-	1    3350 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5F07D099
-P 3450 5300
-F 0 "#PWR02" H 3450 5050 50  0001 C CNN
-F 1 "GND" H 3455 5127 50  0000 C CNN
-F 2 "" H 3450 5300 50  0001 C CNN
-F 3 "" H 3450 5300 50  0001 C CNN
-	1    3450 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 2000 3350 2200
-Wire Wire Line
-	3750 2000 3750 2200
-Wire Wire Line
-	3750 2200 3750 2500
-Connection ~ 3750 2200
-Wire Wire Line
-	3650 2200 3750 2200
-Wire Wire Line
-	3650 2500 3650 2200
-Wire Wire Line
-	3450 2200 3450 2500
-Wire Wire Line
-	3350 2200 3450 2200
-Connection ~ 3350 2200
-Wire Wire Line
-	3350 2500 3350 2200
-Wire Wire Line
-	3750 5200 3850 5200
-Connection ~ 3750 5200
-Wire Wire Line
-	3750 5100 3750 5200
-Wire Wire Line
-	3650 5200 3750 5200
-Connection ~ 3650 5200
-Wire Wire Line
-	3650 5100 3650 5200
-Wire Wire Line
-	3550 5200 3650 5200
-Connection ~ 3550 5200
-Wire Wire Line
-	3550 5100 3550 5200
-Wire Wire Line
-	3250 5100 3250 5200
-Wire Wire Line
-	3250 5200 3350 5200
-Connection ~ 3350 5200
-Wire Wire Line
-	3350 5100 3350 5200
-Wire Wire Line
-	3450 5300 3450 5200
-Wire Wire Line
-	3350 5200 3450 5200
-Wire Wire Line
-	3450 5200 3550 5200
-Connection ~ 3450 5200
-Wire Wire Line
-	3450 5100 3450 5200
-Wire Wire Line
-	3850 5200 3850 5100
-Connection ~ 3250 5200
-Wire Wire Line
-	3150 5200 3250 5200
-Wire Wire Line
-	3150 5100 3150 5200
-NoConn ~ 2750 4500
-NoConn ~ 2750 4400
-NoConn ~ 2750 4300
-NoConn ~ 2750 4200
-NoConn ~ 2750 4100
-NoConn ~ 2750 4000
-NoConn ~ 2750 3800
-NoConn ~ 2750 3700
-NoConn ~ 2750 3600
-NoConn ~ 2750 3400
-NoConn ~ 2750 3300
-NoConn ~ 2750 3200
-NoConn ~ 2750 3000
-NoConn ~ 2750 2900
-NoConn ~ 4350 4600
-NoConn ~ 4350 4500
-NoConn ~ 4350 4300
-NoConn ~ 4350 4200
-NoConn ~ 4350 4100
-NoConn ~ 4350 4000
-NoConn ~ 4350 3900
-NoConn ~ 4350 3700
-NoConn ~ 4350 3600
-NoConn ~ 4350 3500
-NoConn ~ 4350 3300
-NoConn ~ 4350 3200
-NoConn ~ 4350 3000
-NoConn ~ 4350 2900
-$Comp
-L FIN_HAT_TEMPLATE:Raspberry_Pi_2_3 J1
-U 1 1 5F15F5E4
-P 3550 3800
-F 0 "J1" H 2550 5200 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2850 5100 50  0000 C CNN
-F 2 "FIN HAT Template:PinSocket_2x20_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3550 3800 50  0001 C CNN
-	1    3550 3800
-	1    0    0    -1  
-$EndComp
 $Comp
 L FIN_HAT_TEMPLATE:POE_Header J2
 U 1 1 5F162702
@@ -342,6 +212,147 @@ F 1 "POE_Header" H 8150 2434 50  0000 C CNN
 F 2 "FIN HAT Template:PinSocket_2x02_P2.54mm_Vertical" H 7900 2300 50  0001 C CNN
 F 3 "~" H 7900 2300 50  0001 C CNN
 	1    7900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F07D099
+P 2150 4800
+F 0 "#PWR02" H 2150 4550 50  0001 C CNN
+F 1 "GND" H 2155 4627 50  0000 C CNN
+F 2 "" H 2150 4800 50  0001 C CNN
+F 3 "" H 2150 4800 50  0001 C CNN
+	1    2150 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5F07F1C6
+P 2350 2650
+F 0 "#PWR03" H 2350 2500 50  0001 C CNN
+F 1 "+3.3V" H 2365 2823 50  0000 C CNN
+F 2 "" H 2350 2650 50  0001 C CNN
+F 3 "" H 2350 2650 50  0001 C CNN
+	1    2350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5F07F8B1
+P 4300 2700
+F 0 "#PWR01" H 4300 2550 50  0001 C CNN
+F 1 "+5V" H 4315 2873 50  0000 C CNN
+F 2 "" H 4300 2700 50  0001 C CNN
+F 3 "" H 4300 2700 50  0001 C CNN
+	1    4300 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 1600 5200 0    50   ~ 0
+Raspberry Pi CM3 HAT Socket
+NoConn ~ 4150 3100
+NoConn ~ 2550 2900
+NoConn ~ 2550 3100
+NoConn ~ 4150 3200
+NoConn ~ 2550 3400
+NoConn ~ 2550 3500
+NoConn ~ 2550 3000
+NoConn ~ 2550 3800
+NoConn ~ 2550 3900
+NoConn ~ 4150 3300
+NoConn ~ 2550 4100
+NoConn ~ 2550 4200
+NoConn ~ 2550 4400
+NoConn ~ 2550 3300
+NoConn ~ 2550 4300
+NoConn ~ 2550 4500
+NoConn ~ 4150 3500
+NoConn ~ 4150 3600
+NoConn ~ 4150 3800
+NoConn ~ 4150 4000
+NoConn ~ 4150 4100
+NoConn ~ 4150 4300
+NoConn ~ 4150 4500
+NoConn ~ 4150 4600
+NoConn ~ 4150 4700
+NoConn ~ 2550 4600
+NoConn ~ 2550 3700
+NoConn ~ 4150 3900
+Wire Wire Line
+	2550 3200 2150 3200
+Wire Wire Line
+	2150 3200 2150 4000
+Wire Wire Line
+	2550 4700 2150 4700
+Connection ~ 2150 4700
+Wire Wire Line
+	2150 4700 2150 4800
+Wire Wire Line
+	2550 4000 2150 4000
+Connection ~ 2150 4000
+Wire Wire Line
+	2150 4000 2150 4700
+Wire Wire Line
+	2550 3600 2350 3600
+Wire Wire Line
+	2350 3600 2350 2800
+Wire Wire Line
+	4150 2900 4300 2900
+Wire Wire Line
+	4300 2900 4300 2800
+Wire Wire Line
+	4300 2800 4150 2800
+Wire Wire Line
+	4300 2800 4300 2700
+Connection ~ 4300 2800
+$Comp
+L power:GND #PWR0101
+U 1 1 5F190035
+P 4400 4750
+F 0 "#PWR0101" H 4400 4500 50  0001 C CNN
+F 1 "GND" H 4405 4577 50  0000 C CNN
+F 2 "" H 4400 4750 50  0001 C CNN
+F 3 "" H 4400 4750 50  0001 C CNN
+	1    4400 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4750 4400 4400
+Wire Wire Line
+	4400 4400 4150 4400
+Wire Wire Line
+	4150 4200 4400 4200
+Wire Wire Line
+	4400 4200 4400 4400
+Connection ~ 4400 4400
+Wire Wire Line
+	4150 3700 4400 3700
+Wire Wire Line
+	4400 3700 4400 4200
+Connection ~ 4400 4200
+Wire Wire Line
+	4150 3400 4400 3400
+Wire Wire Line
+	4400 3400 4400 3700
+Connection ~ 4400 3700
+Wire Wire Line
+	4150 3000 4400 3000
+Wire Wire Line
+	4400 3000 4400 3400
+Connection ~ 4400 3400
+Wire Wire Line
+	2350 2800 2550 2800
+Wire Wire Line
+	2350 2650 2350 2800
+Connection ~ 2350 2800
+$Comp
+L FIN_HAT_TEMPLATE:Raspberry_Pi_2_3_Default J1
+U 1 1 5F1866CE
+P 2650 2800
+F 0 "J1" H 3350 3065 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3_Default" H 3350 2974 50  0000 C CNN
+F 2 "FIN HAT Template:PinSocket_2x20_P2.54mm_Vertical" H 2650 2800 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2650 2800 50  0001 C CNN
+	1    2650 2800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
