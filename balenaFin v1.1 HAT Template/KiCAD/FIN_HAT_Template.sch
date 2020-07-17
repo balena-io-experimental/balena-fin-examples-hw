@@ -14,95 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR02
-U 1 1 5F07D099
-P 3450 5300
-F 0 "#PWR02" H 3450 5050 50  0001 C CNN
-F 1 "GND" H 3455 5127 50  0000 C CNN
-F 2 "" H 3450 5300 50  0001 C CNN
-F 3 "" H 3450 5300 50  0001 C CNN
-	1    3450 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 5100 3150 5200
-Wire Wire Line
-	3150 5200 3250 5200
-Wire Wire Line
-	3850 5200 3850 5100
-Wire Wire Line
-	3450 5100 3450 5200
-Connection ~ 3450 5200
-Wire Wire Line
-	3450 5200 3550 5200
-Wire Wire Line
-	3450 5300 3450 5200
-Wire Wire Line
-	3350 5100 3350 5200
-Connection ~ 3350 5200
-Wire Wire Line
-	3350 5200 3450 5200
-Wire Wire Line
-	3250 5100 3250 5200
-Connection ~ 3250 5200
-Wire Wire Line
-	3250 5200 3350 5200
-Wire Wire Line
-	3550 5100 3550 5200
-Connection ~ 3550 5200
-Wire Wire Line
-	3550 5200 3650 5200
-Wire Wire Line
-	3650 5100 3650 5200
-Connection ~ 3650 5200
-Wire Wire Line
-	3650 5200 3750 5200
-Wire Wire Line
-	3750 5100 3750 5200
-Connection ~ 3750 5200
-Wire Wire Line
-	3750 5200 3850 5200
-Wire Wire Line
-	3350 2500 3350 2200
-Wire Wire Line
-	3350 2200 3450 2200
-Wire Wire Line
-	3450 2200 3450 2500
-Wire Wire Line
-	3650 2500 3650 2200
-Wire Wire Line
-	3650 2200 3750 2200
-Wire Wire Line
-	3750 2200 3750 2500
-$Comp
-L power:+3.3V #PWR03
-U 1 1 5F07F1C6
-P 3750 2000
-F 0 "#PWR03" H 3750 1850 50  0001 C CNN
-F 1 "+3.3V" H 3765 2173 50  0000 C CNN
-F 2 "" H 3750 2000 50  0001 C CNN
-F 3 "" H 3750 2000 50  0001 C CNN
-	1    3750 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR01
-U 1 1 5F07F8B1
-P 3350 2000
-F 0 "#PWR01" H 3350 1850 50  0001 C CNN
-F 1 "+5V" H 3365 2173 50  0000 C CNN
-F 2 "" H 3350 2000 50  0001 C CNN
-F 3 "" H 3350 2000 50  0001 C CNN
-	1    3350 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 2000 3350 2200
-Connection ~ 3350 2200
-Wire Wire Line
-	3750 2000 3750 2200
-Connection ~ 3750 2200
-$Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5F085248
 P 9550 1300
@@ -128,36 +39,6 @@ Text Notes 9700 5050 0    50   ~ 0
 Co-Processor HAT
 Text Notes 7900 2550 0    50   ~ 0
 POE Header
-Text Notes 4000 5100 0    50   ~ 0
-Raspberry Pi CM3 HAT Socket
-NoConn ~ 4350 2900
-NoConn ~ 4350 3000
-NoConn ~ 4350 3200
-NoConn ~ 4350 3300
-NoConn ~ 4350 3500
-NoConn ~ 4350 3600
-NoConn ~ 4350 3700
-NoConn ~ 4350 3900
-NoConn ~ 4350 4000
-NoConn ~ 4350 4100
-NoConn ~ 4350 4200
-NoConn ~ 4350 4300
-NoConn ~ 4350 4500
-NoConn ~ 4350 4600
-NoConn ~ 2750 2900
-NoConn ~ 2750 3000
-NoConn ~ 2750 3200
-NoConn ~ 2750 3300
-NoConn ~ 2750 3400
-NoConn ~ 2750 3600
-NoConn ~ 2750 3700
-NoConn ~ 2750 3800
-NoConn ~ 2750 4000
-NoConn ~ 2750 4100
-NoConn ~ 2750 4200
-NoConn ~ 2750 4300
-NoConn ~ 2750 4400
-NoConn ~ 2750 4500
 NoConn ~ 7700 2300
 NoConn ~ 7700 2400
 NoConn ~ 8600 2300
@@ -301,28 +182,6 @@ Wire Wire Line
 Wire Wire Line
 	9800 2500 9800 2600
 $Comp
-L FIN_HAT_TEMPLATE:Raspberry_Pi_2_3 J1
-U 1 1 5F15F5E4
-P 3550 3800
-F 0 "J1" H 2550 5200 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2850 5100 50  0000 C CNN
-F 2 "FIN HAT Template:PinSocket_2x20_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3550 3800 50  0001 C CNN
-	1    3550 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L FIN_HAT_TEMPLATE:POE_Header J2
-U 1 1 5F162702
-P 7900 2300
-F 0 "J2" H 8150 2525 50  0000 C CNN
-F 1 "POE_Header" H 8150 2434 50  0000 C CNN
-F 2 "FIN HAT Template:PinSocket_2x02_P2.54mm_Vertical" H 7900 2300 50  0001 C CNN
-F 3 "~" H 7900 2300 50  0001 C CNN
-	1    7900 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L FIN_HAT_TEMPLATE:Co-Processor_Header J3
 U 1 1 5F163428
 P 9700 4050
@@ -342,6 +201,147 @@ F 1 "USB_Header" H 10328 2210 50  0000 L CNN
 F 2 "FIN HAT Template:PinSocket_1x04_P2.54mm_Vertical" H 10100 2300 50  0001 C CNN
 F 3 "~" H 10100 2300 50  0001 C CNN
 	1    10100 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 4000 5100 0    50   ~ 0
+Raspberry Pi CM3 HAT Socket
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5F07F1C6
+P 3750 2000
+F 0 "#PWR03" H 3750 1850 50  0001 C CNN
+F 1 "+3.3V" H 3765 2173 50  0000 C CNN
+F 2 "" H 3750 2000 50  0001 C CNN
+F 3 "" H 3750 2000 50  0001 C CNN
+	1    3750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5F07F8B1
+P 3350 2000
+F 0 "#PWR01" H 3350 1850 50  0001 C CNN
+F 1 "+5V" H 3365 2173 50  0000 C CNN
+F 2 "" H 3350 2000 50  0001 C CNN
+F 3 "" H 3350 2000 50  0001 C CNN
+	1    3350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F07D099
+P 3450 5300
+F 0 "#PWR02" H 3450 5050 50  0001 C CNN
+F 1 "GND" H 3455 5127 50  0000 C CNN
+F 2 "" H 3450 5300 50  0001 C CNN
+F 3 "" H 3450 5300 50  0001 C CNN
+	1    3450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2000 3350 2200
+Wire Wire Line
+	3750 2000 3750 2200
+Wire Wire Line
+	3750 2200 3750 2500
+Connection ~ 3750 2200
+Wire Wire Line
+	3650 2200 3750 2200
+Wire Wire Line
+	3650 2500 3650 2200
+Wire Wire Line
+	3450 2200 3450 2500
+Wire Wire Line
+	3350 2200 3450 2200
+Connection ~ 3350 2200
+Wire Wire Line
+	3350 2500 3350 2200
+Wire Wire Line
+	3750 5200 3850 5200
+Connection ~ 3750 5200
+Wire Wire Line
+	3750 5100 3750 5200
+Wire Wire Line
+	3650 5200 3750 5200
+Connection ~ 3650 5200
+Wire Wire Line
+	3650 5100 3650 5200
+Wire Wire Line
+	3550 5200 3650 5200
+Connection ~ 3550 5200
+Wire Wire Line
+	3550 5100 3550 5200
+Wire Wire Line
+	3250 5100 3250 5200
+Wire Wire Line
+	3250 5200 3350 5200
+Connection ~ 3350 5200
+Wire Wire Line
+	3350 5100 3350 5200
+Wire Wire Line
+	3450 5300 3450 5200
+Wire Wire Line
+	3350 5200 3450 5200
+Wire Wire Line
+	3450 5200 3550 5200
+Connection ~ 3450 5200
+Wire Wire Line
+	3450 5100 3450 5200
+Wire Wire Line
+	3850 5200 3850 5100
+Connection ~ 3250 5200
+Wire Wire Line
+	3150 5200 3250 5200
+Wire Wire Line
+	3150 5100 3150 5200
+NoConn ~ 2750 4500
+NoConn ~ 2750 4400
+NoConn ~ 2750 4300
+NoConn ~ 2750 4200
+NoConn ~ 2750 4100
+NoConn ~ 2750 4000
+NoConn ~ 2750 3800
+NoConn ~ 2750 3700
+NoConn ~ 2750 3600
+NoConn ~ 2750 3400
+NoConn ~ 2750 3300
+NoConn ~ 2750 3200
+NoConn ~ 2750 3000
+NoConn ~ 2750 2900
+NoConn ~ 4350 4600
+NoConn ~ 4350 4500
+NoConn ~ 4350 4300
+NoConn ~ 4350 4200
+NoConn ~ 4350 4100
+NoConn ~ 4350 4000
+NoConn ~ 4350 3900
+NoConn ~ 4350 3700
+NoConn ~ 4350 3600
+NoConn ~ 4350 3500
+NoConn ~ 4350 3300
+NoConn ~ 4350 3200
+NoConn ~ 4350 3000
+NoConn ~ 4350 2900
+$Comp
+L FIN_HAT_TEMPLATE:Raspberry_Pi_2_3 J1
+U 1 1 5F15F5E4
+P 3550 3800
+F 0 "J1" H 2550 5200 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2850 5100 50  0000 C CNN
+F 2 "FIN HAT Template:PinSocket_2x20_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3550 3800 50  0001 C CNN
+	1    3550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L FIN_HAT_TEMPLATE:POE_Header J2
+U 1 1 5F162702
+P 7900 2300
+F 0 "J2" H 8150 2525 50  0000 C CNN
+F 1 "POE_Header" H 8150 2434 50  0000 C CNN
+F 2 "FIN HAT Template:PinSocket_2x02_P2.54mm_Vertical" H 7900 2300 50  0001 C CNN
+F 3 "~" H 7900 2300 50  0001 C CNN
+	1    7900 2300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
