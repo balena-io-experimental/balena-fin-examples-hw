@@ -90,8 +90,10 @@ Project Outputs for*
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.sch-bak
 *~
 fp-info-cache*
+fp-lib-table*
 sym-lib-table*
 
 _autosave-*
