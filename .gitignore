@@ -1,8 +1,13 @@
-# Created by https://www.gitignore.io/api/osx,kicad,eagle,altium,windows
-
 ### Altium ###
+
+#Project structure files
+*.PrjPCBStructure
+*.PrjPcbStructure
+
 # Previews Folders
 **/__Previews/
+*.SchDocPreview
+*.PcbDocPreview
 
 # History Folders
 **/History/*
@@ -12,6 +17,7 @@ Project\ Logs*/
 
 # Project Outputs
 Project\ Outputs*/
+Project Outputs for*
 
 # Auto-conversion notices
 *.PcbDoc.htm
@@ -38,7 +44,7 @@ Project\ Outputs*/
 #eagle.epf
 
 # Autorouter files
-*.pro
+/Eagle/*.pro
 *.job
 
 # CAM files
@@ -73,16 +79,23 @@ Project\ Outputs*/
 # file locks introduced since 7.x
 *.lck
 
+
 ### KiCad ###
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
 # Temporary files
+*.dcm
 *.000
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.sch-bak
 *~
+fp-info-cache*
+fp-lib-table*
+sym-lib-table*
+
 _autosave-*
 *.tmp
 *-rescue.lib
@@ -93,7 +106,7 @@ _autosave-*
 *.net
 
 # Autorouter files (exported from Pcbnew)
-*.dsn
+/KiCAD/*.dsn
 *.ses
 
 # Exported BOM files
@@ -108,6 +121,7 @@ bom/
 
 # Gerber export output
 out/
+
 
 ### OSX ###
 # General
@@ -137,6 +151,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -161,5 +176,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# End of https://www.gitignore.io/api/osx,kicad,eagle,altium,windows
